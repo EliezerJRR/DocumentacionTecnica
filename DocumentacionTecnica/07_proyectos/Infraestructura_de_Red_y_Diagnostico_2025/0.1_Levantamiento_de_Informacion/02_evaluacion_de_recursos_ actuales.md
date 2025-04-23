@@ -1,1 +1,0 @@
-Evaluación de recursos actuales 

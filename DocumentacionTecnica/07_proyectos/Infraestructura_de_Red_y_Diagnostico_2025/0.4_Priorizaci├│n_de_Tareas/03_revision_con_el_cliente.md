@@ -1,1 +1,0 @@
-Revisión con el cliente 

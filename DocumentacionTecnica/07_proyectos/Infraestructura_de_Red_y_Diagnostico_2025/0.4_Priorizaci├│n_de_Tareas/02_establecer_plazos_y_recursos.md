@@ -1,1 +1,0 @@
-Establecer plazos y recursos 
