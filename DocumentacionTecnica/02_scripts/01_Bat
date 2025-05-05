@@ -1,0 +1,100 @@
+@echo off
+SETLOCAL EnableDelayedExpansion
+
+:: Definir la ruta base para la estructura
+set "base_dir=DocumentacionTecnica"
+
+:: Crear la carpeta principal 01_playbooks
+mkdir "%base_dir%\01_playbooks"
+
+:: Crear las subcarpetas dentro de 01_playbooks
+mkdir "%base_dir%\01_playbooks\01_dns"
+mkdir "%base_dir%\01_playbooks\02_linux"
+mkdir "%base_dir%\01_playbooks\03_windows"
+mkdir "%base_dir%\01_playbooks\04_erp"
+mkdir "%base_dir%\01_playbooks\05_firewall"
+mkdir "%base_dir%\01_playbooks\05_firewall\01_pfsense"
+mkdir "%base_dir%\01_playbooks\05_firewall\02_fortinet"
+
+:: Crear los archivos .md en las carpetas correspondientes
+echo Creación de registro A en Cloudflare > "%base_dir%\01_playbooks\01_dns\01_cloudflare_crear-registro-a_v1.0.md"
+echo Configuración de Firewall en Ubuntu > "%base_dir%\01_playbooks\02_linux\01_ubuntu_configuracion-firewall_v1.0.md"
+echo Creación de usuarios en Active Directory > "%base_dir%\01_playbooks\03_windows\01_ad_crear-usuarios_v1.2.md"
+echo Instalación de Odoo 17 > "%base_dir%\01_playbooks\04_erp\01_odoo17_instalacion_v1.0.md"
+echo Procedimientos de creación en PfSense > "%base_dir%\01_playbooks\05_firewall\01_pfsense\01_procedimientos-creacion.md"
+echo Procedimientos de creación en Fortinet > "%base_dir%\01_playbooks\05_firewall\02_fortinet\01_procedimientos-creacion.md"
+
+:: Crear la carpeta 02_scripts
+mkdir "%base_dir%\02_scripts"
+mkdir "%base_dir%\02_scripts\01_bash"
+mkdir "%base_dir%\02_scripts\02_python"
+mkdir "%base_dir%\02_scripts\03_powershell"
+
+:: Crear la carpeta 03_diagramas
+mkdir "%base_dir%\03_diagramas"
+mkdir "%base_dir%\03_diagramas\01_red"
+mkdir "%base_dir%\03_diagramas\02_arquitectura"
+mkdir "%base_dir%\03_diagramas\03_servicios"
+
+:: Crear la carpeta 04_recursos
+mkdir "%base_dir%\04_recursos"
+mkdir "%base_dir%\04_recursos\01_comandos"
+mkdir "%base_dir%\04_recursos\02_plantillas"
+mkdir "%base_dir%\04_recursos\03_guias-externas"
+
+:: Crear la carpeta 05_clientes
+mkdir "%base_dir%\05_clientes"
+mkdir "%base_dir%\05_clientes\01_empresaX"
+mkdir "%base_dir%\05_clientes\02_empresaY"
+
+:: Crear la carpeta 06_backups
+mkdir "%base_dir%\06_backups"
+mkdir "%base_dir%\06_backups\01_versiones-antiguas"
+
+:: Mensaje final
+echo Estructura de carpetas y archivos .md creada exitosamente!
+
+@echo off
+SETLOCAL EnableDelayedExpansion
+
+:: Definir la ruta base para la estructura
+set "base_dir=DocumentacionTecnica"
+
+:: Crear la carpeta 07 (si aún no existe)
+mkdir "%base_dir%\07_proyectos"
+
+:: Crear la carpeta Proyectos dentro de 07
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025"
+
+:: Crear las subcarpetas dentro de Infraestructura_de_Red_y_Diagnostico_2025
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.0_Consultoria_y_Planificacion"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.1_Levantamiento_de_Informacion"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.2_Diagnostico_Inicial"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.3_Revisión_de_Infraestructura_Actual"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.4_Priorización_de_Tareas"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\1.0_Diseño_y_Planificación_de_Red"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\2.0_Implementación_de_Hardware_y_Equipos_de_Red"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\3.0_Configuración_de_Red_y_Servicios"
+mkdir "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\4.0_Implementación_de_Firewall_y_Seguridad"
+
+:: Crear los archivos .md correspondientes en cada carpeta
+echo Levantamiento de Información > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.1_Levantamiento_de_Informacion\01_documentacion_de_equipos_y_redes.md"
+echo Evaluación de recursos actuales > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.1_Levantamiento_de_Informacion\02_evaluacion_de_recursos_ actuales.md"
+echo Análisis de necesidades adicionales > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.1_Levantamiento_de_Informacion\03_analisis_de_necesidades_adicionales.md"
+echo Identificación de problemas existentes > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.2_Diagnostico_Inicial\01_identificacion_de_problemas_existentes.md"
+echo Evaluación del rendimiento de la red > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.2_Diagnostico_Inicial\02_evaluacion_del_rendimiento_de_la_red.md"
+echo Revisión de seguridad actual > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.2_Diagnostico_Inicial\03_revision_de_seguridad_actual.md"
+echo Verificación de hardware y software > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.3_Revisión_de_Infraestructura_Actual\01_verificacion_de_hardware_y_software.md"
+echo Revisión de topología de red > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.3_Revisión_de_Infraestructura_Actual\02_revision_de_topologia_de_red.md"
+echo Evaluación de protocolos y servicios de red > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.3_Revisión_de_Infraestructura_Actual\03_evaluacion_de_protocolos_y_servicios_de_red.md"
+echo Priorización de tareas > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.4_Priorización_de_Tareas\01_identificar_tareas_criticas.md"
+echo Establecer plazos y recursos > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.4_Priorización_de_Tareas\02_establecer_plazos_y_recursos.md"
+echo Revisión con el cliente > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\0.4_Priorización_de_Tareas\03_revision_con_el_cliente.md"
+echo Segmentación por Áreas en VLAN > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\1.0_Diseño_y_Planificación_de_Red\01_segmentacion_por_areas_en_vlans.md"
+echo Instalación de nuevos switches > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\2.0_Implementación_de_Hardware_y_Equipos_de_Red\01_instalacion_de_nuevos_switches.md"
+echo Configuración de DNS > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\3.0_Configuración_de_Red_y_Servicios\01_configuracion_de_dns.md"
+echo Implementación de firewall (PfSense/Fortinet) > "%base_dir%\07_proyectos\Infraestructura_de_Red_y_Diagnostico_2025\4.0_Implementación_de_Firewall_y_Seguridad\01_implementacion_de_firewall.md"
+
+:: Mensaje final
+echo Estructura de proyectos creada exitosamente!
+pause
